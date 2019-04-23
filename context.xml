@@ -13,8 +13,10 @@
     <Environment name="dari/database/project/class" override="false" type="java.lang.String" 
                  value="com.psddev.dari.db.AggregateDatabase"/>
     <Environment name="dari/database/project/defaultDelegate" override="false" type="java.lang.String" value="sql"/>
+    <!--Environment name="dari/database/project/delegate/sql/class" override="false" type="java.lang.String" 
+                 value="com.psddev.dari.db.SqlDatabase"/-->
     <Environment name="dari/database/project/delegate/sql/class" override="false" type="java.lang.String" 
-                 value="com.psddev.dari.db.SqlDatabase"/>
+                 value="com.psddev.dari.db.MYSqlDatabase"/>
     <Environment name="dari/database/project/delegate/sql/enableReplicationCache" override="false" type="java.lang.String" 
                  value="true"/>
     <Environment name="dari/database/project/delegate/sql/enableFunnelCache" override="false" type="java.lang.String" 
