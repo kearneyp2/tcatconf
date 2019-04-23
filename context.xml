@@ -10,21 +10,33 @@
 
     <!-- Database -->
     <Environment name="dari/defaultDatabase" override="false" type="java.lang.String" value="project"/>
-    <Environment name="dari/database/project/class" override="false" type="java.lang.String" value="com.psddev.dari.db.AggregateDatabase"/>
+    <Environment name="dari/database/project/class" override="false" type="java.lang.String" 
+                 value="com.psddev.dari.db.AggregateDatabase"/>
     <Environment name="dari/database/project/defaultDelegate" override="false" type="java.lang.String" value="sql"/>
-    <Environment name="dari/database/project/delegate/sql/class" override="false" type="java.lang.String" value="com.psddev.dari.db.SqlDatabase"/>
-    <Environment name="dari/database/project/delegate/sql/enableReplicationCache" override="false" type="java.lang.String" value="true"/>
-    <Environment name="dari/database/project/delegate/sql/enableFunnelCache" override="false" type="java.lang.String" value="false"/>
+    <Environment name="dari/database/project/delegate/sql/class" override="false" type="java.lang.String" 
+                 value="com.psddev.dari.db.SqlDatabase"/>
+    <Environment name="dari/database/project/delegate/sql/enableReplicationCache" override="false" type="java.lang.String" 
+                 value="true"/>
+    <Environment name="dari/database/project/delegate/sql/enableFunnelCache" override="false" type="java.lang.String" 
+                 value="false"/>
 
     <!-- Database Resource Links, see server.xml for connection settings. -->
-    <ResourceLink global="dari/database/project/delegate/sql/dataSource" name="dari/database/project/delegate/sql/dataSource" type="javax.sql.DataSource"/>
-    <ResourceLink global="dari/database/project/delegate/sql/readDataSource" name="dari/database/project/delegate/sql/readDataSource" type="javax.sql.DataSource"/>
+    <ResourceLink global="dari/database/project/delegate/sql/dataSource" 
+                  name="dari/database/project/delegate/sql/dataSource" 
+                  type="javax.sql.DataSource"/>
+    <ResourceLink global="dari/database/project/delegate/sql/readDataSource" 
+                  name="dari/database/project/delegate/sql/readDataSource" 
+                  type="javax.sql.DataSource"/>
 
     <!-- Solr -->
-    <Environment name="dari/database/project/delegate/solr/groups" override="false" type="java.lang.String" value="-* +cms.content.searchable "/>
-    <Environment name="dari/database/project/delegate/solr/class" override="false" type="java.lang.String" value="com.psddev.dari.db.SolrDatabase"/>
-    <Environment name="dari/database/project/delegate/solr/serverUrl" override="false" type="java.lang.String" value="http://localhost:8080/solr"/>
-    <Environment name="dari/database/project/delegate/solr/readServerUrl" override="false" type="java.lang.String" value="http://localhost:8080/solr"/>
+    <Environment name="dari/database/project/delegate/solr/groups" override="false" type="java.lang.String" 
+                 value="-* +cms.content.searchable "/>
+    <Environment name="dari/database/project/delegate/solr/class" override="false" type="java.lang.String" 
+                 value="com.psddev.dari.db.SolrDatabase"/>
+    <Environment name="dari/database/project/delegate/solr/serverUrl" override="false" type="java.lang.String" 
+                 value="http://localhost:8080/solr"/>
+    <Environment name="dari/database/project/delegate/solr/readServerUrl" override="false" type="java.lang.String" 
+                 value="http://localhost:8080/solr"/>
     <Environment name="dari/database/project/delegate/solr/version" override="false" type="java.lang.String" value="3.6.2"/>
 
      <!-- Storage -->
