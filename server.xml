@@ -40,7 +40,8 @@
 
   </GlobalNamingResources>
   <Service name="Catalina">
-    <Connector URIEncoding="UTF-8" acceptCount="150" connectionTimeout="20000" maxConnections="10000" maxHttpHeaderSize="8190" maxThreads="64" port="8080" protocol="HTTP/1.1"/>
+    <Connector URIEncoding="UTF-8" acceptCount="150" connectionTimeout="20000" maxConnections="10000" maxHttpHeaderSize="8190" 
+               maxThreads="64" port="8080" redirectPort="8443" protocol="HTTP/1.1"/>
 
     <Engine defaultHost="localhost" name="Catalina">
       <Valve className="org.apache.catalina.valves.RemoteIpValve" protocolHeader="x-forwarded-proto" protocolHeaderHttpsValue="https" remoteIpHeader="x-forwarded-for"/>
