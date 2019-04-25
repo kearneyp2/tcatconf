@@ -46,6 +46,4 @@
     <Environment name="dari/storage/local/class" type="java.lang.String" value="com.psddev.dari.util.LocalStorageItem"/>
     <Environment name="dari/storage/local/baseUrl" type="java.lang.String" value="http://localhost:8080/storage"/>
     <Environment name="dari/storage/local/rootPath" type="java.lang.String" value="{{tomcat_dir}}/webapps/storage"/>
-
 </Context>
-
